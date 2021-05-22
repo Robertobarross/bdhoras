@@ -1,0 +1,26 @@
+/* Estilo do titulo do topo */
+.titulo-topo{font-size: 15px; font-family: Arial; margin-left: 20px; margin-top: 25px; color: white;}
+
+/* Estilo dos links do menu */
+.links-menu{font-size: 15px; font-family: Arial; margin: 20px; text-decoration: none;}
+
+/* Estilo do titulo do centro */
+.titulo-centro{font-size: 20px; font-family: Arial; margin-left: 20px; margin-top: 10px; color: black;}
+
+/* Estilo dos textos */
+.texto{font-size: 15px; font-family: Arial; margin: 10px;}
+
+/* Estilo do texto do rodapé */
+.texto-rodape{font-size: 15px; font-family: Arial; text-align: center; color: white; margin-top: 20px;}
+
+/* Estilo do rodapé */
+#topo{width: 100%; height: 70px; border: 1px solid gray; background-color: gray;}
+
+/* Estilo do menu */
+#menu{width: 100%; height: 30px; border: 1px solid gray;}
+
+/* Estilo do centro */
+#centro{width: 100%; height: 450px; border: 1px solid white;}
+
+/* Estilo do rodapé */
+#rodape{width: 100%; height: 70px; border: 1px solid gray; background-color: gray;}

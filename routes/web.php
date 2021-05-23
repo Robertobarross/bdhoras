@@ -3,20 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+/*
+Rotas da aplicação. Tem conexão direta com a pasta resources/views.
+Na pasta Public foi criado as pastas css, img e js.
 */
 
-Route::get('/', function () {
+Route::get('/', function () { // Rota home //
     return view('home');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () { // Rota dasnboard //
     return view('dashboard');
 })->name('dashboard');

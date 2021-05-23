@@ -1,4 +1,4 @@
-<x-app-layout>
+{{--<x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
@@ -12,4 +12,15 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</x-app-layout>--}}
+
+@extends('template'){{--Extenção do arquivo template--}}
+
+@section('title', 'dbhoras'){{--Extenção do arquivo template--}}
+
+@section('content'){{--Extenção do arquivo template--}}
+
+<h1 class="titulo-centro">Seja bem vindo!</h1>
+
+@endsection {{--Extenção do arquivo template--}}
+

@@ -18,28 +18,54 @@
     </head>
     <body>
 
+
+        {{--Div Topo--}}
+        <div id="topo">
+            <p class="titulo-topo"><img src="/img/bar.png" class="logo" alt="dbhoras">dbhoras - Banco de horas para jornada de trabalho</p>
+        </div>
+        {{--Fim da div topo--}}
+
+
+
+        {{--Div links do Menu--}}
+        <div id="menu">
+
+            @guest {{--Links para login e cadastro--}}
+            <a href="/login" class="links-menu">Login</a>
+            <a href="/register" class="links-menu">Cadastre-se</a>
+            @endguest
+
+            @auth {{--Arquivo logout, para encerrar a sessão--}}
+           {{-- <a href="/dashboard" class="nav link">Meus eventos</a> --}}
+            <form action="/logout" method="POST">
+                @csrf
+                <a href="/logout"
+                class="links-menu"
+                onclick="event.preventDefault();
+                this.closest('form').submit();">Sair</a>
+            </form>
+            @endauth
+
+        </div>
+        {{--Fim da div links menu--}}
+
+
         @yield('content'){{--Aqui é onde vai aparecer o conteúdo--}}
 
-        <div id="topo">
-            <h1 class="titulo-topo">dbhoras - Banco de horas para jornada de trabalho</h1>
-        </div>
 
-
-        <div id="menu">
-            <a href="/dashboard" class="links-menu">Login</a>
-        </div>
-
-
+        {{--Div centro--}}
         <div id="centro">
-            <h1 class="titulo-centro">Centro</h1>
         </div>
+        {{--Fim da div centro--}}
 
 
+        {{--Div rodapé--}}
         <div id="rodape">
-            <footer>{{--Aqui é o rodapé--}}
+            <footer>
                 <p class="texto-rodape">bdhoras &COPY; 2021 - Todos os direitos reservados</p>
             </footer>
         </div>
+        {{--Fim da div rodapé--}}
 
 
     </body>

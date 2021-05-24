@@ -21,6 +21,7 @@
 @section('content'){{--Extenção do arquivo template--}}
 
 <h1 class="titulo-centro">Seja bem vindo!</h1>
+<a href="#">teste</a>
 
 @endsection {{--Extenção do arquivo template--}}
 

@@ -31,6 +31,7 @@
         <div id="menu">
 
             @guest {{--Links para login e cadastro--}}
+            <a href="#" class="links-menu">linke teste</a>
             <a href="/login" class="links-menu">Login</a>
             <a href="/register" class="links-menu">Cadastre-se</a>
             @endguest

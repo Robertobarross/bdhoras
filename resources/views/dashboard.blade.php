@@ -16,12 +16,13 @@
 
 @extends('template'){{--Extenção do arquivo template--}}
 
-@section('title', 'dbhoras'){{--Extenção do arquivo template--}}
+@section('title', 'Painel-dbhoras'){{--Extenção do arquivo template--}}
 
 @section('content'){{--Extenção do arquivo template--}}
 
 <h1 class="titulo-centro">Seja bem vindo!</h1>
-<a href="#">teste</a>
+<a href="/inserir">Inserir horas</a>
+<a href="/">Inicio</a>
 
 @endsection {{--Extenção do arquivo template--}}
 

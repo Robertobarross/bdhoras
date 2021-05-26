@@ -23,5 +23,8 @@ Route::get('/inserir', function () { // Rota da página inserir //
     return view('horas.inserir');
 })->middleware('auth');
 
-Route::post('/horas', [HoraController::class, 'inserir'])->middleware('auth'); //  //
+Route::post('/horas', [HoraController::class, 'store'])->middleware('auth'); // Enviando para tabela horas no bd //
 
+Route::get('/show', function (){// Rota show //
+    return view('horas.show');
+})->middleware('auth');

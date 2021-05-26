@@ -31,10 +31,10 @@
         <div id="menu">
 
             @guest {{--Links para login e cadastro--}}
-            <a href="/home" class="links-menu">Inicio</a>
             <a href="/login" class="links-menu">Login</a>
             <a href="/register" class="links-menu">Cadastre-se</a>
             @endguest
+            <a href="/inserir" class="links-menu">Inserir horas</a>
 
             @auth {{--Arquivo logout, para encerrar a sessão--}}
            {{-- <a href="/dashboard" class="nav link">Meus eventos</a> --}}

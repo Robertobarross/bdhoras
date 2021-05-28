@@ -4,6 +4,11 @@
 
 @section('content'){{--Extenção do arquivo template--}}
 
+        {{--Mensagem de cadastro de horas. Conexão com HoraController.php--}}
+        @if (session('msg'))
+        <p class="texto-form">{{ session('msg') }}</p>
+        @endif
+
 <div id="form-hora">
     <h1 class="texto-form">Inserir horas</h1>
     <form action="/horas" method="POST" enctype="multipart/form-data">

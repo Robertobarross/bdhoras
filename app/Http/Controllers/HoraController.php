@@ -28,9 +28,17 @@ class HoraController extends Controller
             return redirect('/inserir')->with('msg', 'Horas cadastradas com sucesso!');// Retornar para página inicial //
         }
 
-            public function show($id){
-                $hora = Hora::findOrFail($id);
-                return view('horas.show');
+            public function show(){ // Trazendo dados do banco para ser exibidos na view show //
+                $hora = new Hora;
+
+                $horas = Hora::all();
+
+                $user = auth()->user(); // Para separar envio de horas por usuário //
+                $hora->user_id = $user->id;
+
+            return view('horas.show', ['horas' => $horas]);
             }
 
+
     }
+

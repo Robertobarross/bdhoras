@@ -21,8 +21,10 @@
 @section('content'){{--Extenção do arquivo template--}}
 
 <h1 class="titulo-centro">Seja bem vindo!</h1>
-<a href="/inserir">Inserir horas</a>
-<a href="/">Inicio</a>
+<br><a href="/inserir">Inserir horas</a>
+<br><a href="/">Inicio</a>
+<br><a href="/show">Show</a>
+
 
 @endsection {{--Extenção do arquivo template--}}
 

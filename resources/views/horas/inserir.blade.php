@@ -31,7 +31,7 @@
         <input type="Submit" class="btn" value="Enviar">
     </form>
 
-    <br><a href="/" class="links-form">Página inicial</a> | <a href="/dashboard" class="links-form">Retornar ao painel</a>
+    <br><a href="/" class="links-form">Página inicial</a> | <a href="/dashboard" class="links-form">Retornar ao painel</a> | <a href="/show" class="links-form">Banco de horas</a>
 
 @endsection {{--Extenção do arquivo template--}}
 

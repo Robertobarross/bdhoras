@@ -5,12 +5,13 @@
 
 @section('content'){{--Extenção do arquivo template--}}
 
-<p>Aula 13 até 18</p>
+<p class="titulo-show">Banco de horas</p>
 
-@foreach ($horas as $hora ) {{--Declarando variáveis das informações que serão exibidas--}}
-
-<p class="texto-form"> Data: {{ $hora->data }} - Inicio: {{ $hora->inicio }} - Intervalo: {{ $hora->intervalo }} - Retorno: {{ $hora->retorno }} - Final: {{ $hora->final }}</p>
+@foreach ($horas as $hora ){{--Declarando variáveis das informações que serão exibidas--}}
+   <p class="form-show"> Data: {{ $hora->data }} - Inicio: {{ $hora->inicio }} - Intervalo: {{ $hora->intervalo }} - Retorno: {{ $hora->retorno }} - Final: {{ $hora->final }}</p>
 @endforeach
+
+<br><a href="/" class="links-show">Página inicial</a> | <a href="/dashboard" class="links-form">Retornar ao painel</a>
 
 
 @endsection {{--Extenção do arquivo template--}}

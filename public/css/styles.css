@@ -41,4 +41,15 @@
 /* Estilo do botão do formulário, inserir.blade.php */
 .btn{margin-top: 10px; margin-left: 70px; font-family: Arial; background-color: #999999;}
 
+/* Estilo dos links */
 .links-form{font-size: 17px; font-family: Arial; text-decoration: none; margin-left: auto; margin-right: auto;}
+
+/* Estilo do form show */
+.form-show{font-size: 17px; font-family: Arial; text-align: center; border: 1px solid #999999; color: white; width: 70%; margin-left: auto; margin-right: auto; border-radius: 10px; background-color: #999999;}
+
+/* Estilo do titulo show */
+.titulo-show{font-size: 20px; font-family: Arial; color: #999999; margin-left: 205px; margin-top: 15px;}
+
+/* Estilo links show */
+.links-show{font-size: 17px; font-family: Arial; text-decoration: none; margin-left: 205px;}
+

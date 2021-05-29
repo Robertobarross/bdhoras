@@ -26,5 +26,8 @@
 <br><a href="/show">Show</a>
 
 
+
+
+
 @endsection {{--Extenção do arquivo template--}}
 

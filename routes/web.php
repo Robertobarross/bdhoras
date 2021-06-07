@@ -30,6 +30,12 @@ Route::get('/show', [HoraController::class, 'show'], function () {
     return view('horas.show');
 })->middleware('auth'); // Rota Controller show //
 
+Route::get('/horas/{id}', [HoraController::class, 'show'])->middleware('auth'); // Rota Controller show para visualizar arquivos do ususário que está logado //
+
+
+Route::delete('/horas/{id}', [HoraController::class, 'destroy'])->middleware('auth');// Rota delete //
+
+
 /*
 Route::get('/show', function (){
     return view('horas.show');

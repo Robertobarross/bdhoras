@@ -21,6 +21,7 @@ class HoraController extends Controller
             $hora->retorno = $request->retorno;
             $hora->final = $request->final;
 
+
             $user = auth()->user(); // Para separar envio de horas por usuário //
             $hora->user_id = $user->id;
 
@@ -36,9 +37,15 @@ class HoraController extends Controller
                 $user = auth()->user(); // Para separar envio de horas por usuário //
                 $hora->user_id = $user->id;
 
-            return view('horas.show', ['horas' => $horas]);
+                $horaOwner = User::where('id', $hora->user_id)->first()->toArray();// Buscando usuário //
+
+            return view('horas.show', ['horas' => $horas, 'horaOwner' => $horaOwner]);
+            }
+
+            public function destroy($id) { // Função delete //
+                Hora::findOrfail($id)->delete();
+                return redirect('/show')->with('msg', 'Registro excluido com sucesso!');
             }
 
 
     }
-

@@ -41,6 +41,9 @@
 /* Estilo do botão do formulário, inserir.blade.php */
 .btn{margin-top: 10px; margin-left: 70px; font-family: Arial; background-color: #999999;}
 
+/* Botões-show */
+.btn-show{width: 70px; font-family: Arial; color: gray; margin-left: 20px; border-radius: 5px; background-color: orange;} .btn-show:hover{background-color: white;}
+
 /* Estilo dos links */
 .links-form{font-size: 17px; font-family: Arial; text-decoration: none; margin-left: auto; margin-right: auto;}
 
@@ -52,4 +55,6 @@
 
 /* Estilo links show */
 .links-show{font-size: 17px; font-family: Arial; text-decoration: none; margin-left: 205px;}
+
+.table{width: 90%; margin-left: auto; margin-right: auto; font-size: 10px; padding: 5px;}
 

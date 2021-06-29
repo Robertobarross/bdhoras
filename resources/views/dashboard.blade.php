@@ -21,9 +21,9 @@
 @section('content'){{--Extenção do arquivo template--}}
 
 <h1 class="titulo-centro">Seja bem vindo!</h1>
-<br><a href="/inserir">Inserir horas</a>
-<br><a href="/">Inicio</a>
-<br><a href="/show">Show</a>
+<br><a href="/inserir" class="titulo-centro">Inserir horas</a>
+<br><a href="/" class="titulo-centro">Inicio</a>
+<br><a href="/show" class="titulo-centro">Show</a>
 
 
 

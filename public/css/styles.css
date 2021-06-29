@@ -27,7 +27,7 @@
 #centro{width: 100%; height: 410px;}
 
 /* Estilo do rodapé */
-#rodape{width: 100%; height: 75px; border: 1px solid gray; background-color: gray;}
+#rodape{width: 100%; height: 110px; border: 1px solid gray; background-color: gray;}
 
 /* Estilo da div form-hora, inserir.blade.php */
 #form-hora{width: 50%; height: 500px; border-radius: 10px; border: 1px solid #DCDCDC; margin-left: auto; margin-right: auto; margin-top: 20px;}

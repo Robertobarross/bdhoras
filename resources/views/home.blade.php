@@ -10,7 +10,5 @@
 </h1>
 </div>
 
-<h2>Aula 16</h2>
-
 @endsection {{--Extenção do arquivo template--}}
 
